@@ -10,5 +10,6 @@ lint:
 
 test:
 	python -m pytest -vv --cov=main --cov=greeting tests
+	python -m pytest --nbval notebook.ipynb # tests for jupyter notebook
 
 all: install format lint test
