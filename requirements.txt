@@ -5,3 +5,4 @@ pylint==2.15.5
 black==22.10.0
 pytest-cov==4.0.0
 nbval==0.9.6
+ipdb==0.13.9
