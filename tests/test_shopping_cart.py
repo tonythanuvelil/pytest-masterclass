@@ -28,10 +28,6 @@ def test_cart_overflow(cart):
 
 
 def test_get_total_price(cart):
-    cart.add("apple")
-    cart.add("orange")
-    item_database = ItemDatabase()
-
     """
     This mock_get_item and Mock ideally replaces the below price_map.
     This is used when mock database values are required to test a function.
@@ -41,6 +37,10 @@ def test_get_total_price(cart):
         "orange": 2.0
     }
     """
+
+    cart.add("apple")
+    cart.add("orange")
+    item_database = ItemDatabase()
 
     def mock_get_item(item: str):
         if item == "apple":
