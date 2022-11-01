@@ -6,3 +6,4 @@ black==22.10.0
 pytest-cov==4.0.0
 nbval==0.9.6
 ipdb==0.13.9
+requests==2.28.1
